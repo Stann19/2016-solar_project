@@ -5,7 +5,7 @@ from solar_objects import Star, Planet
 from solar_vis import DrawableObject
 
 
-def read_space_objects_data_from_file(double_star):
+def read_space_objects_data_from_file(input_filename):
     """Cчитывает данные о космических объектах из файла, создаёт сами объекты
     и вызывает создание их графических образов
 
@@ -15,7 +15,7 @@ def read_space_objects_data_from_file(double_star):
     """
 
     objects = []
-    with open(double_star, 'r') as input_file:
+    with open(input_filename, 'r') as input_file:
         for line in input_file:
             if len(line.strip()) == 0 or line[0] == '#':
                 continue  # пустые строки и строки-комментарии пропускаем
