@@ -1,7 +1,7 @@
 # coding: utf-8
 # license: GPLv3
 
-from solar_objects import Star, Planet1
+from solar_objects import Star, Planet
 
 
 def read_space_objects_data_from_file(input_filename):
